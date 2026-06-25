@@ -1,1 +1,20 @@
+#pragma once
+#include <boost/uuid/uuid.hpp>
+#include <cstdint>
+#include <limits>
+#include <string>
 
+namespace cryptonote
+{
+  // === AMC COIN DNA v1.1 ===
+  #define CRYPTONOTE_NAME "AMC Coin"
+  #define CRYPTONOTE_TICKER "AMC"
+  #define GENESIS_BLOCK_REWARD 0
+  #define MONEY_SUPPLY ((uint64_t)100000ULL * 1000000ULL) // 100 juta AMC
+  #define EMISSION_SPEED_FACTOR 20 // Halving 6 bulan
+  #define DIFFICULTY_TARGET 120 // Block 2 menit
+  #define P2P_DEFAULT_PORT 28080
+  #define RPC_DEFAULT_PORT 28081
+  #define CURRENT_FORK_MAJOR 1
+  #define CURRENT_FORK_MINOR 0
+}
